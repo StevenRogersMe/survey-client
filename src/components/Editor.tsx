@@ -27,7 +27,7 @@ const Editor = (params: { id: string }): React.ReactElement => {
   useEffect(() => {
     (async () => {
       const surveyAction = await dispatch(get(params.id));
-      creator.JSON = JSON.parse(surveyAction.payload.content);
+      creator.JSON = surveyAction.payload.content;
     })();
   }, [dispatch, creator, params.id]);
 

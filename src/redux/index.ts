@@ -4,7 +4,7 @@ import { createBrowserHistory } from "history";
 import rootReducer from "./root-reducer";
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.API_BASE_URL;
+axios.defaults.baseURL = "http://54.187.200.255";
 
 export const history = createBrowserHistory();
 
